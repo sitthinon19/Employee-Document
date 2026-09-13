@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Employee Document</title>
+<title>เอกสาร/เงินเดือน</title>
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <style>
 :root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#687386;--primary:#1769ff;--line:#e6eaf0;--ok:#16834a;--warn:#b77900;--danger:#c33b3b}
@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="hero"><h1>Employee Document</h1><p id="userInfo">กำลังเข้าสู่ระบบ...</p></div>
+  <div class="hero"><h1>Document/Payroll</h1><p id="userInfo">กำลังเข้าสู่ระบบ...</p></div>
   <div class="tabs">
     <button class="tab active" data-page="calendarPage">ปฏิทินงาน</button>
     <button class="tab" data-page="holidayPage">วันหยุด</button>
@@ -42,7 +42,7 @@
 </div>
 <script>
 const LIFF_ID='2011333828-SVVUvyzH';
-const WEB_APP_URL='https://script.google.com/macros/s/AKfycbxUjAad6M3QEuspDpqm_8Ug7o-FYZWR_Nr217yOgLElT-O-1poGRUvr6dg-A_hXlR2P/exec';
+const WEB_APP_URL='https://script.google.com/macros/s/AKfycbyOX1lyb7VfQfvkPYBcm-0Il6C2_Mk6WifYAebTMOT4v_X4n8Qpb0CRJAKrUC-u9JMYlA/exec';
 let idToken='', calendarData=[], holidays=[];
 const monthNames=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
