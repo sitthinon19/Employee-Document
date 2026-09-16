@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>เอกสาร/เงินเดือน</title>
+<title>HR Mini</title>
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <style>
 :root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#687386;--primary:#1769ff;--line:#e6eaf0;--ok:#16834a;--warn:#b77900;--danger:#c33b3b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif}.wrap{max-width:760px;margin:auto;padding:14px}.hero{background:linear-gradient(135deg,#1769ff,#5b8cff);color:#fff;border-radius:22px;padding:20px;margin-bottom:12px;box-shadow:0 8px 24px #1769ff22}.hero h1{font-size:24px;margin:0 0 4px}.hero p{margin:0;opacity:.9}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 6px;font-weight:700;color:var(--muted);cursor:pointer}.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}.page{display:none}.page.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 4px 14px #18223008}.toolbar{display:flex;gap:8px;align-items:center}.toolbar>*{flex:1}button,select{font:inherit}button{cursor:pointer;border:0}.primary{background:var(--primary);color:#fff;padding:11px 14px;border-radius:12px;font-weight:700}.secondary{background:#eef3ff;color:#2454b8;padding:11px 14px;border-radius:12px;font-weight:700}.select{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff;color:var(--text)}.calendar-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}.dow{text-align:center;font-size:12px;color:var(--muted);padding:5px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.day{min-height:72px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:6px;position:relative;cursor:pointer}.day.empty{border:0;background:transparent;cursor:default}.day.today{outline:2px solid #7ca4ff}.num{font-weight:800;font-size:13px}.dotrow{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px}.dot{width:7px!important;height:7px!important;min-width:7px;min-height:7px;border-radius:50%;display:inline-block;flex:0 0 7px;padding:0;margin:0}.att{background:#1769ff}.leave{background:#9b59b6}.ot{background:#f39c12}.holiday{background:#16834a}.mini{font-size:11px;color:var(--muted);margin-top:3px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}.legend span{display:inline-flex;gap:5px;align-items:center}.detail{background:#f8faff;border:1px solid #e1e8ff;border-radius:14px;padding:12px;margin-top:12px}.detail h3{margin:0 0 8px}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef1f5;font-size:12px}.badge.ok{background:#e6f6ed;color:var(--ok)}.list{display:grid;gap:8px}.holiday-item,.claim{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.holiday-item strong,.claim strong{display:block}.muted{color:var(--muted)}.money{font-size:22px;font-weight:800}.payslip-total{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{border:1px solid var(--line);border-radius:14px;padding:12px}.error,.success{padding:10px 12px;border-radius:12px;margin:8px 0;white-space:pre-line}.error{background:#fff0f0;color:var(--danger)}.success{background:#eefaf3;color:var(--ok)}.loading{text-align:center;color:var(--muted);padding:20px}.small{font-size:12px}.hidden{display:none!important}@media(max-width:480px){.day{min-height:62px}.payslip-total{grid-template-columns:1fr}.hero{border-radius:18px}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif}.wrap{max-width:760px;margin:auto;padding:14px}.hero{background:linear-gradient(135deg,#1769ff,#5b8cff);color:#fff;border-radius:22px;padding:20px;margin-bottom:12px;box-shadow:0 8px 24px #1769ff22}.hero h1{font-size:24px;margin:0 0 4px}.hero p{margin:0;opacity:.9}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 6px;font-weight:700;color:var(--muted);cursor:pointer}.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}.page{display:none}.page.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 4px 14px #18223008}.toolbar{display:flex;gap:8px;align-items:center}.toolbar>*{flex:1}button,select{font:inherit}button{cursor:pointer;border:0}.primary{background:var(--primary);color:#fff;padding:11px 14px;border-radius:12px;font-weight:700}.secondary{background:#eef3ff;color:#2454b8;padding:11px 14px;border-radius:12px;font-weight:700}.select{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff;color:var(--text)}.calendar-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}.dow{text-align:center;font-size:12px;color:var(--muted);padding:5px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.day{min-height:72px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:6px;position:relative;cursor:pointer}.day.empty{border:0;background:transparent;cursor:default}.day.today{outline:2px solid #7ca4ff}.num{font-weight:800;font-size:13px}.dotrow{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px}.dot{width:7px!important;height:7px!important;min-width:7px;min-height:7px;border-radius:50%;display:inline-block;flex:0 0 7px;padding:0;margin:0}.att{background:#1769ff}.leave{background:#9b59b6}.ot{background:#f39c12}.holiday{background:#16834a}.mini{font-size:11px;color:var(--muted);margin-top:3px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}.legend span{display:inline-flex;gap:5px;align-items:center}.detail{background:#f8faff;border:1px solid #e1e8ff;border-radius:14px;padding:12px;margin-top:12px}.detail h3{margin:0 0 8px}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef1f5;font-size:12px}.badge.ok{background:#e6f6ed;color:var(--ok)}.list{display:grid;gap:8px}.holiday-item,.claim{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.holiday-item strong,.claim strong{display:block}.muted{color:var(--muted)}.money{font-size:22px;font-weight:800}.payslip-total{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{border:1px solid var(--line);border-radius:14px;padding:12px}.error,.success{padding:10px 12px;border-radius:12px;margin:8px 0;white-space:pre-line}.error{background:#fff0f0;color:var(--danger)}.success{background:#eefaf3;color:var(--ok)}.loading{text-align:center;color:var(--muted);padding:20px}.small{font-size:12px}.hidden{display:none!important}.approval-item{border:1px solid var(--line);border-radius:14px;padding:13px;background:#fff}.approval-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.approval-type{font-size:12px;color:var(--primary);font-weight:800}.approval-title{font-size:17px;font-weight:800;margin-top:3px}.approval-meta{display:grid;gap:4px;margin-top:9px;font-size:13px}.approval-actions{display:flex;gap:8px;margin-top:12px}.approve-btn,.reject-btn{flex:1;padding:10px 12px;border-radius:11px;font-weight:800}.approve-btn{background:#e6f6ed;color:var(--ok)}.reject-btn{background:#fff0f0;color:var(--danger)}.reject-box{display:none;margin-top:10px}.reject-box textarea{width:100%;min-height:82px;border:1px solid var(--line);border-radius:10px;padding:10px;box-sizing:border-box;font:inherit;resize:vertical}.reject-box.show{display:block}.history-comment{margin-top:8px;padding:9px 10px;border-radius:10px;background:#f8f9fb;white-space:pre-line}.status-approved{background:#e6f6ed;color:var(--ok)}.status-rejected{background:#fff0f0;color:var(--danger)}
+@media(max-width:480px){.day{min-height:62px}.payslip-total{grid-template-columns:1fr}.hero{border-radius:18px}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="hero"><h1>Document/Payroll</h1><p id="userInfo">กำลังเข้าสู่ระบบ...</p></div>
-  <div class="tabs">
+  <div class="tabs" id="mainTabs">
     <button class="tab active" data-page="calendarPage">ปฏิทินงาน</button>
-    <button class="tab" data-page="holidayPage">วันหยุด</button>
     <button class="tab" data-page="payslipPage">สลิปเงินเดือน</button>
+    <button class="tab hidden" id="approvalTab" data-page="approvalPage">อนุมัติรายการ</button>
   </div>
   <div id="message"></div>
 
@@ -30,20 +31,35 @@
     <div id="dayDetail" class="card hidden"></div>
   </section>
 
-  <section id="holidayPage" class="page">
-    <div class="card"><div class="toolbar"><select class="select" id="holidayYear"></select><button class="primary" id="refreshHoliday">รีเฟรช</button></div></div>
-    <div class="card"><div id="holidayList" class="list"><div class="loading">กำลังโหลด...</div></div></div>
-  </section>
-
   <section id="payslipPage" class="page">
     <div class="card"><div class="toolbar"><select class="select" id="payslipMonth"></select><button class="primary" id="loadPayslip">ดูสลิป</button></div></div>
     <div id="payslip" class="card"><div class="loading">เลือกเดือนเพื่อดูสลิป</div></div>
+  </section>
+
+  <section id="approvalPage" class="page">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+        <div>
+          <h2 style="margin:0">รายการอนุมัติ</h2>
+          <div class="muted small" id="approvalUserRole"></div>
+        </div>
+        <button class="primary" id="refreshApproval">รีเฟรช</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 10px">รอดำเนินการ <span class="badge" id="pendingCount">0</span></h3>
+      <div id="approvalPending" class="list"><div class="loading">กำลังโหลด...</div></div>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 10px">ประวัติการดำเนินการ</h3>
+      <div id="approvalHistory" class="list"><div class="loading">กำลังโหลด...</div></div>
+    </div>
   </section>
 </div>
 <script>
 const LIFF_ID='2011333828-SVVUvyzH';
 const WEB_APP_URL='https://script.google.com/macros/s/AKfycbzCasoN5Bzq5PPXvQY1CVeury0wD3c1GLINC6OSiP1lnlmsYX7EaV6P7GH6UeJ_qyGNJg/exec';
-let idToken='', calendarData=[], holidays=[];
+let idToken='', calendarData=[], holidays=[], approvalData={pending:[],history:[],canApprove:false};
 const monthNames=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function msg(t,ok=false){const e=document.getElementById('message');e.className=ok?'success':'error';e.textContent=t;e.style.display='block'}
@@ -51,10 +67,9 @@ async function api(action,extra={}){const r=await fetch(WEB_APP_URL,{method:'POS
 function ym(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')}
 function initSelectors(){
  const now=new Date();
- const cm=document.getElementById('calendarMonth'); const pm=document.getElementById('payslipMonth'); const hy=document.getElementById('holidayYear');
+ const cm=document.getElementById('calendarMonth'); const pm=document.getElementById('payslipMonth');
  for(let i=-12;i<=12;i++){const d=new Date(now.getFullYear(),now.getMonth()+i,1),v=ym(d);const o=document.createElement('option');o.value=v;o.textContent=monthNames[d.getMonth()]+' '+(d.getFullYear()+543);cm.appendChild(o)}
  cm.value=ym(now);
- for(let y=now.getFullYear()-2;y<=now.getFullYear()+2;y++){const o=document.createElement('option');o.value=y;o.textContent=y+543;hy.appendChild(o)} hy.value=now.getFullYear();
  for(let i=-2;i<=2;i++){const d=new Date(now.getFullYear(),now.getMonth()+i,1),v=ym(d),o=document.createElement('option');o.value=v;o.textContent=monthNames[d.getMonth()]+' '+(d.getFullYear()+543);pm.appendChild(o)} pm.value=ym(now);
 }
 function monthShift(v,n){const [y,m]=v.split('-').map(Number);return ym(new Date(y,m-1+n,1))}
@@ -65,10 +80,6 @@ async function loadCalendar(){
     const r=await api('getEmployeeCalendar',{month:v});
     if(!r.success) throw new Error(r.message);
     calendarData=r.days||[];
-
-    const hr=await api('getAnnualHolidays');
-    if(hr && hr.success) holidays=hr.items||[];
-    else holidays=[];
 
     renderCalendar(v);
   }catch(e){msg(e.message)}
@@ -124,9 +135,81 @@ function renderCalendar(v){
 function showDay(x){const e=document.getElementById('dayDetail');let h='<h3>'+esc(x.date)+'</h3>';h+='<div class="row"><span>Check In</span><b>'+esc(x.checkIn||'-')+'</b></div><div class="row"><span>Check Out</span><b>'+esc(x.checkOut||'-')+'</b></div>';h+='<div class="row"><span>สถานะงาน</span><span class="badge">'+esc(x.attendanceStatus||'-')+'</span></div>';if(x.holiday)h+='<div class="row"><span>วันหยุด</span><b>'+esc(x.holiday.holiday||'วันหยุด')+'</b></div>';h+='<div class="row"><span>Leave ที่อนุมัติ</span><b>'+((x.leave||[]).length||'-')+'</b></div>';(x.leave||[]).forEach(a=>h+='<div class="small muted">• '+esc(a.type)+' '+esc(a.reason||'')+'</div>');h+='<div class="row"><span>OT ที่อนุมัติ</span><b>'+((x.ot||[]).length||'-')+'</b></div>';(x.ot||[]).forEach(a=>h+='<div class="small muted">• '+esc(a.start)+' - '+esc(a.end)+' ('+Number(a.hours||0).toFixed(2)+' ชม.) '+esc(a.reason||'')+'</div>');e.innerHTML=h;e.classList.remove('hidden')}
 async function loadHolidays(){const box=document.getElementById('holidayList');box.innerHTML='<div class="loading">กำลังโหลด...</div>';try{const r=await api('getAnnualHolidays');if(!r.success)throw new Error(r.message);holidays=r.items||[];const y=String(document.getElementById('holidayYear').value);const list=holidays.filter(x=>normalizeDate(x.date).startsWith(y+'-'));box.innerHTML=list.length?list.map(x=>'<div class="holiday-item"><strong>'+esc(x.holiday||'-')+'</strong><span>'+esc(x.date)+'</span>'+(x.description?'<div class="small muted">'+esc(x.description)+'</div>':'')+'</div>').join(''):'ไม่มีวันหยุดที่เปิดใช้งานในปีนี้';}catch(e){box.innerHTML='';msg(e.message)}}
 async function loadPayslip(){const box=document.getElementById('payslip');box.innerHTML='<div class="loading">กำลังคำนวณ...</div>';try{const r=await api('getPayslip',{month:document.getElementById('payslipMonth').value});if(!r.success)throw new Error(r.message);box.innerHTML='<div><h2 style="margin:0">สลิปเงินเดือน</h2><div class="muted">'+esc(monthNames[Number(r.month.split('-')[1])-1]+' '+(Number(r.month.slice(0,4))+543))+'</div></div><div class="row"><span>พนักงาน</span><b>'+esc(r.employee.employeeName)+'</b></div><div class="row"><span>รหัสพนักงาน</span><span>'+esc(r.employee.employeeId)+'</span></div><div class="row"><span>เงินเดือนพื้นฐาน</span><b>'+Number(r.salary||0).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท</b></div><div style="margin-top:10px"><b>Benefits Claim ที่อนุมัติแล้ว</b></div><div class="list" style="margin-top:8px">'+(r.benefits.length?r.benefits.map(x=>'<div class="claim"><strong>'+esc(x.type)+' · '+Number(x.amount).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท</strong><span>'+esc(x.date)+' · '+esc(x.description)+'</span><div class="small">'+esc(x.claimId)+'</div></div>').join(''):'<div class="muted">ไม่มี Benefits Claim ที่อนุมัติในเดือนนี้</div>')+'</div><div class="payslip-total" style="margin-top:12px"><div class="stat"><div class="muted">รวมรายได้ (Gross)</div><div class="money">'+Number(r.grossSalary).toLocaleString('th-TH',{minimumFractionDigits:2})+'</div></div><div class="stat"><div class="muted">ประกันสังคม</div><div class="money">-'+Number(r.socialSecurity).toLocaleString('th-TH',{minimumFractionDigits:2})+'</div></div></div><div class="stat" style="margin-top:8px"><div class="muted">ฐานคำนวณประกันสังคม</div><b>'+Number(r.socialSecurityBase).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท × 5%</b></div><div class="stat" style="margin-top:8px"><div class="muted">เงินรับสุทธิ</div><div class="money">'+Number(r.netSalary).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท</div></div>'}catch(e){box.innerHTML='';msg(e.message)}}
-function showPage(id){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.page===id));if(id==='calendarPage')loadCalendar();if(id==='holidayPage')loadHolidays()}
+function showPage(id){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.page===id));if(id==='calendarPage')loadCalendar();if(id==='approvalPage')loadApprovals()}
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>showPage(b.dataset.page));
-document.getElementById('prevMonth').onclick=()=>{document.getElementById('calendarMonth').value=monthShift(document.getElementById('calendarMonth').value,-1);loadCalendar()};document.getElementById('nextMonth').onclick=()=>{document.getElementById('calendarMonth').value=monthShift(document.getElementById('calendarMonth').value,1);loadCalendar()};document.getElementById('calendarMonth').onchange=loadCalendar;document.getElementById('refreshHoliday').onclick=loadHolidays;document.getElementById('holidayYear').onchange=loadHolidays;document.getElementById('loadPayslip').onclick=loadPayslip;
-async function init(){try{if(LIFF_ID.indexOf('ใส่_')===0)throw new Error('กรุณาใส่ LIFF_ID ของ Employee Document ก่อนใช้งาน');await liff.init({liffId:LIFF_ID});if(!liff.isLoggedIn()){liff.login();return}idToken=liff.getIDToken();const p=await liff.getProfile();document.getElementById('userInfo').textContent=p.displayName?'สวัสดี คุณ '+p.displayName:'กำลังใช้งาน HR Mini';initSelectors();await loadCalendar()}catch(e){msg(e.message)}}window.addEventListener('load',init);
+document.getElementById('prevMonth').onclick=()=>{document.getElementById('calendarMonth').value=monthShift(document.getElementById('calendarMonth').value,-1);loadCalendar()};document.getElementById('nextMonth').onclick=()=>{document.getElementById('calendarMonth').value=monthShift(document.getElementById('calendarMonth').value,1);loadCalendar()};document.getElementById('calendarMonth').onchange=loadCalendar;document.getElementById('refreshApproval').onclick=loadApprovals;document.getElementById('loadPayslip').onclick=loadPayslip;
+
+function statusBadge(status){
+  const s=String(status||'');
+  const cls=s==='Approved'?'status-approved':(s==='Rejected'?'status-rejected':'');
+  return '<span class="badge '+cls+'">'+esc(s||'-')+'</span>';
+}
+
+function approvalCard(item, isHistory){
+  const safeType=esc(item.type), safeId=esc(item.requestId);
+  let h='<div class="approval-item">';
+  h+='<div class="approval-top"><div><div class="approval-type">'+safeType+'</div><div class="approval-title">'+safeId+'</div></div>'+statusBadge(item.status)+'</div>';
+  h+='<div class="approval-meta">';
+  h+='<div><b>พนักงาน:</b> '+esc(item.employeeName)+' ('+esc(item.employeeId)+')</div>';
+  h+='<div><b>แผนก:</b> '+esc(item.department||'-')+'</div>';
+  h+='<div><b>วันที่:</b> '+esc(item.date||'-')+'</div>';
+  h+='<div><b>รายการ:</b> '+esc(item.detail||'-')+'</div>';
+  h+='<div><b>จำนวน/ยอด:</b> '+esc(item.amount||'-')+'</div>';
+  h+='<div><b>'+((item.type==='Expense')?'วัตถุประสงค์':'เหตุผล')+':</b> '+esc(item.reason||'-')+'</div>';
+  h+='</div>';
+  if(isHistory){
+    h+='<div class="small muted" style="margin-top:9px">ดำเนินการ: '+esc(item.actionAt||'-')+' · '+esc(item.actionBy||'-')+'</div>';
+    if(item.rejectionReason) h+='<div class="history-comment"><b>เหตุผลที่ไม่อนุมัติ:</b> '+esc(item.rejectionReason)+'</div>';
+    else if(item.comment) h+='<div class="history-comment"><b>หมายเหตุ:</b> '+esc(item.comment)+'</div>';
+  }else{
+    h+='<div class="approval-actions"><button class="approve-btn" onclick="decideApproval(\''+safeType+'\',\''+safeId+'\',\'approve\')">✓ Approved</button><button class="reject-btn" onclick="toggleRejectBox(this)">✕ Rejected</button></div>';
+    h+='<div class="reject-box"><textarea placeholder="กรุณาระบุเหตุผลที่ไม่อนุมัติ"></textarea><button class="reject-btn" style="width:100%;margin-top:7px" onclick="submitReject(this,\''+safeType+'\',\''+safeId+'\')">ยืนยัน Rejected</button></div>';
+  }
+  return h+'</div>';
+}
+
+function toggleRejectBox(btn){
+  const box=btn.parentElement.nextElementSibling;
+  box.classList.toggle('show');
+  if(box.classList.contains('show')) box.querySelector('textarea').focus();
+}
+
+async function decideApproval(type,requestId,decision,reason=''){
+  if(decision==='reject' && !String(reason||'').trim()){msg('กรุณาระบุเหตุผลที่ไม่อนุมัติ');return}
+  try{
+    const r=await api('processApprovalFromLiff',{type,requestId,decision,rejectionReason:String(reason||'').trim()});
+    if(!r.success) throw new Error(r.message);
+    msg(r.message||'ดำเนินการเรียบร้อยแล้ว',true);
+    await loadApprovals();
+  }catch(e){msg(e.message)}
+}
+
+function submitReject(btn,type,requestId){
+  const box=btn.parentElement;
+  const reason=box.querySelector('textarea').value.trim();
+  decideApproval(type,requestId,'reject',reason);
+}
+
+async function loadApprovals(){
+  const pendingBox=document.getElementById('approvalPending');
+  const historyBox=document.getElementById('approvalHistory');
+  pendingBox.innerHTML='<div class="loading">กำลังโหลด...</div>';
+  historyBox.innerHTML='<div class="loading">กำลังโหลด...</div>';
+  try{
+    const r=await api('getApprovalInbox');
+    if(!r.success) throw new Error(r.message);
+    approvalData=r;
+    document.getElementById('approvalUserRole').textContent='Role: '+(r.role||'-')+' · รอ '+((r.pending||[]).length)+' รายการ';
+    document.getElementById('pendingCount').textContent=(r.pending||[]).length;
+    pendingBox.innerHTML=r.pending&&r.pending.length?r.pending.map(x=>approvalCard(x,false)).join(''):'<div class="muted">ไม่มีรายการที่รออนุมัติ</div>';
+    historyBox.innerHTML=r.history&&r.history.length?r.history.map(x=>approvalCard(x,true)).join(''):'<div class="muted">ยังไม่มีประวัติการดำเนินการ</div>';
+  }catch(e){
+    pendingBox.innerHTML='<div class="muted">ไม่สามารถโหลดรายการอนุมัติ</div>';
+    historyBox.innerHTML='<div class="muted">-</div>';
+    msg(e.message);
+  }
+}
+
+async function init(){try{if(LIFF_ID.indexOf('ใส่_')===0)throw new Error('กรุณาใส่ LIFF_ID ของ Employee Document ก่อนใช้งาน');await liff.init({liffId:LIFF_ID});if(!liff.isLoggedIn()){liff.login();return}idToken=liff.getIDToken();const p=await liff.getProfile();document.getElementById('userInfo').textContent=p.displayName?'สวัสดี คุณ '+p.displayName:'กำลังใช้งาน HR Mini';initSelectors();await loadCalendar();try{const ar=await api('getApprovalInbox');if(ar&&ar.success&&ar.canApprove){document.getElementById('approvalTab').classList.remove('hidden');}}catch(e){console.warn('Approval inbox unavailable',e.message)}}catch(e){msg(e.message)}}window.addEventListener('load',init);
 </script>
 </body></html>
