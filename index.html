@@ -7,7 +7,7 @@
 <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <style>
 :root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#687386;--primary:#1769ff;--line:#e6eaf0;--ok:#16834a;--warn:#b77900;--danger:#c33b3b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif}.wrap{max-width:760px;margin:auto;padding:14px}.hero{background:linear-gradient(135deg,#1769ff,#5b8cff);color:#fff;border-radius:22px;padding:20px;margin-bottom:12px;box-shadow:0 8px 24px #1769ff22}.hero h1{font-size:24px;margin:0 0 4px}.hero p{margin:0;opacity:.9}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 6px;font-weight:700;color:var(--muted);cursor:pointer}.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}.page{display:none}.page.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 4px 14px #18223008}.toolbar{display:flex;gap:8px;align-items:center}.toolbar>*{flex:1}button,select{font:inherit}button{cursor:pointer;border:0}.primary{background:var(--primary);color:#fff;padding:11px 14px;border-radius:12px;font-weight:700}.secondary{background:#eef3ff;color:#2454b8;padding:11px 14px;border-radius:12px;font-weight:700}.select{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff;color:var(--text)}.calendar-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}.dow{text-align:center;font-size:12px;color:var(--muted);padding:5px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.day{min-height:72px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:6px;position:relative;cursor:pointer}.day.empty{border:0;background:transparent;cursor:default}.day.today{outline:2px solid #7ca4ff}.num{font-weight:800;font-size:13px}.dotrow{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px}.dot{width:7px!important;height:7px!important;min-width:7px;min-height:7px;border-radius:50%;display:inline-block;flex:0 0 7px;padding:0;margin:0}.att{background:#1769ff}.leave{background:#9b59b6}.ot{background:#f39c12}.holiday{background:#16834a}.mini{font-size:11px;color:var(--muted);margin-top:3px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}.legend span{display:inline-flex;gap:5px;align-items:center}.detail{background:#f8faff;border:1px solid #e1e8ff;border-radius:14px;padding:12px;margin-top:12px}.detail h3{margin:0 0 8px}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef1f5;font-size:12px}.badge.ok{background:#e6f6ed;color:var(--ok)}.list{display:grid;gap:8px}.holiday-item,.claim{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.holiday-item strong,.claim strong{display:block}.muted{color:var(--muted)}.money{font-size:22px;font-weight:800}.payslip-total{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{border:1px solid var(--line);border-radius:14px;padding:12px}.error,.success{padding:10px 12px;border-radius:12px;margin:8px 0;white-space:pre-line}.error{background:#fff0f0;color:var(--danger)}.success{background:#eefaf3;color:var(--ok)}.loading{text-align:center;color:var(--muted);padding:20px}.small{font-size:12px}.hidden{display:none!important}.approval-item{border:1px solid var(--line);border-radius:14px;padding:13px;background:#fff}.approval-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.approval-type{font-size:12px;color:var(--primary);font-weight:800}.approval-title{font-size:17px;font-weight:800;margin-top:3px}.approval-meta{display:grid;gap:4px;margin-top:9px;font-size:13px}.approval-actions{display:flex;gap:8px;margin-top:12px}.approve-btn,.reject-btn{flex:1;padding:10px 12px;border-radius:11px;font-weight:800}.approve-btn{background:#e6f6ed;color:var(--ok)}.reject-btn{background:#fff0f0;color:var(--danger)}.reject-box{display:none;margin-top:10px}.reject-box textarea{width:100%;min-height:82px;border:1px solid var(--line);border-radius:10px;padding:10px;box-sizing:border-box;font:inherit;resize:vertical}.reject-box.show{display:block}.history-comment{margin-top:8px;padding:9px 10px;border-radius:10px;background:#f8f9fb;white-space:pre-line}.status-approved{background:#e6f6ed;color:var(--ok)}.status-rejected{background:#fff0f0;color:var(--danger)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif}.wrap{max-width:760px;margin:auto;padding:14px}.hero{background:linear-gradient(135deg,#1769ff,#5b8cff);color:#fff;border-radius:22px;padding:20px;margin-bottom:12px;box-shadow:0 8px 24px #1769ff22}.hero h1{font-size:24px;margin:0 0 4px}.hero p{margin:0;opacity:.9}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 6px;font-weight:700;color:var(--muted);cursor:pointer}.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}.page{display:none}.page.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 4px 14px #18223008}.toolbar{display:flex;gap:8px;align-items:center}.toolbar>*{flex:1}button,select{font:inherit}button{cursor:pointer;border:0}.primary{background:var(--primary);color:#fff;padding:11px 14px;border-radius:12px;font-weight:700}.secondary{background:#eef3ff;color:#2454b8;padding:11px 14px;border-radius:12px;font-weight:700}.select{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff;color:var(--text)}.calendar-head{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}.dow{text-align:center;font-size:12px;color:var(--muted);padding:5px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.day{min-height:72px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:6px;position:relative;cursor:pointer}.day.empty{border:0;background:transparent;cursor:default}.day.today{outline:2px solid #7ca4ff}.num{font-weight:800;font-size:13px}.dotrow{display:flex;gap:3px;flex-wrap:wrap;margin-top:7px}.dot{width:7px!important;height:7px!important;min-width:7px;min-height:7px;border-radius:50%;display:inline-block;flex:0 0 7px;padding:0;margin:0}.att{background:#1769ff}.leave{background:#9b59b6}.ot{background:#f39c12}.holiday{background:#16834a}.work-schedule{background:#c33b3b}.mini{font-size:11px;color:var(--muted);margin-top:3px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:10px}.legend span{display:inline-flex;gap:5px;align-items:center}.detail{background:#f8faff;border:1px solid #e1e8ff;border-radius:14px;padding:12px;margin-top:12px}.detail h3{margin:0 0 8px}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#eef1f5;font-size:12px}.badge.ok{background:#e6f6ed;color:var(--ok)}.list{display:grid;gap:8px}.holiday-item,.claim{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.holiday-item strong,.claim strong{display:block}.muted{color:var(--muted)}.money{font-size:22px;font-weight:800}.payslip-total{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{border:1px solid var(--line);border-radius:14px;padding:12px}.error,.success{padding:10px 12px;border-radius:12px;margin:8px 0;white-space:pre-line}.error{background:#fff0f0;color:var(--danger)}.success{background:#eefaf3;color:var(--ok)}.loading{text-align:center;color:var(--muted);padding:20px}.small{font-size:12px}.hidden{display:none!important}.approval-item{border:1px solid var(--line);border-radius:14px;padding:13px;background:#fff}.approval-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.approval-type{font-size:12px;color:var(--primary);font-weight:800}.approval-title{font-size:17px;font-weight:800;margin-top:3px}.approval-meta{display:grid;gap:4px;margin-top:9px;font-size:13px}.approval-actions{display:flex;gap:8px;margin-top:12px}.approve-btn,.reject-btn{flex:1;padding:10px 12px;border-radius:11px;font-weight:800}.approve-btn{background:#e6f6ed;color:var(--ok)}.reject-btn{background:#fff0f0;color:var(--danger)}.reject-box{display:none;margin-top:10px}.reject-box textarea{width:100%;min-height:82px;border:1px solid var(--line);border-radius:10px;padding:10px;box-sizing:border-box;font:inherit;resize:vertical}.reject-box.show{display:block}.history-comment{margin-top:8px;padding:9px 10px;border-radius:10px;background:#f8f9fb;white-space:pre-line}.status-approved{background:#e6f6ed;color:var(--ok)}.status-rejected{background:#fff0f0;color:var(--danger)}
 @media(max-width:480px){.day{min-height:62px}.payslip-total{grid-template-columns:1fr}.hero{border-radius:18px}}
 </style>
 </head>
@@ -26,7 +26,7 @@
       <div class="toolbar"><button class="secondary" id="prevMonth">‹</button><select class="select" id="calendarMonth"></select><button class="secondary" id="nextMonth">›</button></div>
       <div class="calendar-head"><div class="dow">จ</div><div class="dow">อ</div><div class="dow">พ</div><div class="dow">พฤ</div><div class="dow">ศ</div><div class="dow">ส</div><div class="dow">อา</div></div>
       <div id="calendar" class="calendar"></div>
-      <div class="legend"><span><i class="dot att"></i> Check In/Out</span><span><i class="dot leave"></i> Leave อนุมัติ</span><span><i class="dot ot"></i> OT อนุมัติ</span><span><i class="dot holiday"></i> วันหยุด</span></div>
+      <div class="legend"><span><i class="dot att"></i> Check In/Out</span><span><i class="dot leave"></i> Leave อนุมัติ</span><span><i class="dot ot"></i> OT อนุมัติ</span><span><i class="dot holiday"></i> วันหยุด</span><span><i class="dot work-schedule"></i> ตารางงาน</span></div>
     </div>
     <div id="dayDetail" class="card hidden"></div>
   </section>
@@ -58,8 +58,8 @@
 </div>
 <script>
 const LIFF_ID='2011333828-SVVUvyzH';
-const WEB_APP_URL='https://script.google.com/macros/s/AKfycbz7IkV5_ChtW-aaDcC6Q5VWGt0FqGD8HVQI1I_mVivusAhMZSQ2iMV-AwijQhdQu6e6KQ/exec';
-let idToken='', calendarData=[], holidays=[], approvalData={pending:[],history:[],canApprove:false};
+const WEB_APP_URL='https://script.google.com/macros/s/AKfycbxnvpu7QpQEVbI2seWPkm7t995EmrSOnxOLbRe91z46S0LdMju7aFpX3jsglj7Lh18EEQ/exec';
+let idToken='', calendarData=[], holidays=[], workSchedules=[], approvalData={pending:[],history:[],canApprove:false};
 const monthNames=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function msg(t,ok=false){const e=document.getElementById('message');e.className=ok?'success':'error';e.textContent=t;e.style.display='block'}
@@ -76,10 +76,13 @@ function monthShift(v,n){const [y,m]=v.split('-').map(Number);return ym(new Date
 async function loadCalendar(){
   const v=document.getElementById('calendarMonth').value;
   document.getElementById('calendar').innerHTML='<div class="loading">กำลังโหลด...</div>';
+  document.getElementById('dayDetail').classList.add('hidden');
   try{
     const r=await api('getEmployeeCalendar',{month:v});
     if(!r.success) throw new Error(r.message);
     calendarData=r.days||[];
+    holidays=(r.holidays||[]);
+    workSchedules=(r.workSchedules||[]);
 
     renderCalendar(v);
   }catch(e){msg(e.message)}
@@ -97,12 +100,22 @@ function normalizeDate(v){
 function holidayMap(){
   return Object.fromEntries((holidays||[]).map(h=>[normalizeDate(h.date),h]));
 }
+function workScheduleMap(){
+  const map={};
+  (workSchedules||[]).forEach(x=>{
+    const key=normalizeDate(x.date);
+    if(!map[key]) map[key]=[];
+    map[key].push(x);
+  });
+  return map;
+}
 function renderCalendar(v){
   const [y,m]=v.split('-').map(Number),
     first=new Date(y,m-1,1),
     offset=(first.getDay()+6)%7,
     box=document.getElementById('calendar'),
-    hmap=holidayMap();
+    hmap=holidayMap(),
+    wsmap=workScheduleMap();
   box.innerHTML='';
   for(let i=0;i<offset;i++){
     const e=document.createElement('div');
@@ -115,6 +128,7 @@ function renderCalendar(v){
       x=map[key]||{date:key,checkIn:'',checkOut:'',leave:[],ot:[]},
       holiday=hmap[key];
     x.holiday=holiday||null;
+    x.workSchedule=wsmap[key]||[];
 
     const e=document.createElement('div');
     e.className='day';
@@ -127,12 +141,26 @@ function renderCalendar(v){
       (x.leave?.length?'<i class="dot leave"></i>':'')+
       (x.ot?.length?'<i class="dot ot"></i>':'')+
       (holiday?'<i class="dot holiday"></i>':'')+
+      (x.workSchedule?.length?'<i class="dot work-schedule"></i>':'')+
       '</div>';
     e.onclick=()=>showDay(x);
     box.appendChild(e);
   }
 }
-function showDay(x){const e=document.getElementById('dayDetail');let h='<h3>'+esc(x.date)+'</h3>';h+='<div class="row"><span>Check In</span><b>'+esc(x.checkIn||'-')+'</b></div><div class="row"><span>Check Out</span><b>'+esc(x.checkOut||'-')+'</b></div>';h+='<div class="row"><span>สถานะงาน</span><span class="badge">'+esc(x.attendanceStatus||'-')+'</span></div>';if(x.holiday)h+='<div class="row"><span>วันหยุด</span><b>'+esc(x.holiday.holiday||'วันหยุด')+'</b></div>';h+='<div class="row"><span>Leave ที่อนุมัติ</span><b>'+((x.leave||[]).length||'-')+'</b></div>';(x.leave||[]).forEach(a=>h+='<div class="small muted">• '+esc(a.type)+' '+esc(a.reason||'')+'</div>');h+='<div class="row"><span>OT ที่อนุมัติ</span><b>'+((x.ot||[]).length||'-')+'</b></div>';(x.ot||[]).forEach(a=>h+='<div class="small muted">• '+esc(a.start)+' - '+esc(a.end)+' ('+Number(a.hours||0).toFixed(2)+' ชม.) '+esc(a.reason||'')+'</div>');e.innerHTML=h;e.classList.remove('hidden')}
+function showDay(x){const e=document.getElementById('dayDetail');let h='<h3>'+esc(x.date)+'</h3>';h+='<div class="row"><span>Check In</span><b>'+esc(x.checkIn||'-')+'</b></div><div class="row"><span>Check Out</span><b>'+esc(x.checkOut||'-')+'</b></div>';h+='<div class="row"><span>สถานะงาน</span><span class="badge">'+esc(x.attendanceStatus||'-')+'</span></div>';if(x.holiday){
+  h+='<div class="row"><span>วันหยุด</span><b>'+esc(x.holiday.holiday||'วันหยุด')+'</b></div>';
+  if(x.holiday.description) h+='<div class="small muted">'+esc(x.holiday.description)+'</div>';
+}
+if(x.workSchedule?.length){
+  h+='<div class="row"><span>ตารางงาน</span><div>';
+  x.workSchedule.forEach(w=>{
+    h+='<div><b>'+esc(w.workSchedule||'ตารางงาน')+'</b>';
+    if(w.description) h+='<div class="small muted">'+esc(w.description)+'</div>';
+    h+='</div>';
+  });
+  h+='</div></div>';
+}
+h+='<div class="row"><span>Leave ที่อนุมัติ</span><b>'+((x.leave||[]).length||'-')+'</b></div>';(x.leave||[]).forEach(a=>h+='<div class="small muted">• '+esc(a.type)+' '+esc(a.reason||'')+'</div>');h+='<div class="row"><span>OT ที่อนุมัติ</span><b>'+((x.ot||[]).length||'-')+'</b></div>';(x.ot||[]).forEach(a=>h+='<div class="small muted">• '+esc(a.start)+' - '+esc(a.end)+' ('+Number(a.hours||0).toFixed(2)+' ชม.) '+esc(a.reason||'')+'</div>');e.innerHTML=h;e.classList.remove('hidden')}
 async function loadHolidays(){const box=document.getElementById('holidayList');box.innerHTML='<div class="loading">กำลังโหลด...</div>';try{const r=await api('getAnnualHolidays');if(!r.success)throw new Error(r.message);holidays=r.items||[];const y=String(document.getElementById('holidayYear').value);const list=holidays.filter(x=>normalizeDate(x.date).startsWith(y+'-'));box.innerHTML=list.length?list.map(x=>'<div class="holiday-item"><strong>'+esc(x.holiday||'-')+'</strong><span>'+esc(x.date)+'</span>'+(x.description?'<div class="small muted">'+esc(x.description)+'</div>':'')+'</div>').join(''):'ไม่มีวันหยุดที่เปิดใช้งานในปีนี้';}catch(e){box.innerHTML='';msg(e.message)}}
 async function loadPayslip(){const box=document.getElementById('payslip');box.innerHTML='<div class="loading">กำลังคำนวณ...</div>';try{const r=await api('getPayslip',{month:document.getElementById('payslipMonth').value});if(!r.success)throw new Error(r.message);box.innerHTML='<div><h2 style="margin:0">สลิปเงินเดือน</h2><div class="muted">'+esc(monthNames[Number(r.month.split('-')[1])-1]+' '+(Number(r.month.slice(0,4))+543))+'</div></div><div class="row"><span>พนักงาน</span><b>'+esc(r.employee.employeeName)+'</b></div><div class="row"><span>รหัสพนักงาน</span><span>'+esc(r.employee.employeeId)+'</span></div><div class="row"><span>เงินเดือนพื้นฐาน</span><b>'+Number(r.salary||0).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท</b></div><div style="margin-top:10px"><b>Benefits Claim ที่อนุมัติแล้ว</b></div><div class="list" style="margin-top:8px">'+(r.benefits.length?r.benefits.map(x=>'<div class="claim"><strong>'+esc(x.type)+' · '+Number(x.amount).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท</strong><span>'+esc(x.date)+' · '+esc(x.description)+'</span><div class="small">'+esc(x.claimId)+'</div></div>').join(''):'<div class="muted">ไม่มี Benefits Claim ที่อนุมัติในเดือนนี้</div>')+'</div><div class="payslip-total" style="margin-top:12px"><div class="stat"><div class="muted">รวมรายได้ (Gross)</div><div class="money">'+Number(r.grossSalary).toLocaleString('th-TH',{minimumFractionDigits:2})+'</div></div><div class="stat"><div class="muted">ประกันสังคม</div><div class="money">-'+Number(r.socialSecurity).toLocaleString('th-TH',{minimumFractionDigits:2})+'</div></div></div><div class="stat" style="margin-top:8px"><div class="muted">ฐานคำนวณประกันสังคม</div><b>'+Number(r.socialSecurityBase).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท × 5%</b></div><div class="stat" style="margin-top:8px"><div class="muted">เงินรับสุทธิ</div><div class="money">'+Number(r.netSalary).toLocaleString('th-TH',{minimumFractionDigits:2})+' บาท</div></div>'}catch(e){box.innerHTML='';msg(e.message)}}
 function showPage(id){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.page===id));if(id==='calendarPage')loadCalendar();if(id==='approvalPage')loadApprovals()}
