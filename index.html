@@ -63,7 +63,19 @@ let idToken='', calendarData=[], holidays=[], workSchedules=[], approvalData={pe
 const monthNames=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 function msg(t,ok=false){const e=document.getElementById('message');e.className=ok?'success':'error';e.textContent=t;e.style.display='block'}
-async function api(action,extra={}){const r=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,idToken,...extra})});if(!r.ok)throw new Error('Apps Script API error: HTTP '+r.status);return r.json()}
+async function api(action,extra={}){
+ const payload={action,idToken,...extra},maxAttempts=3; let lastError=null;
+ for(let attempt=1;attempt<=maxAttempts;attempt++){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),30000);
+  try{
+   const r=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),cache:'no-store',signal:controller.signal});
+   if(!r.ok)throw new Error('Apps Script API error: HTTP '+r.status);
+   const text=await r.text(); try{return JSON.parse(text)}catch(_){throw new Error('Apps Script ส่งข้อมูลไม่ใช่ JSON (HTTP '+r.status+')')}
+  }catch(e){lastError=e.name==='AbortError'?new Error('การเชื่อมต่อใช้เวลานานเกินไป'):e;if(attempt<maxAttempts)await new Promise(resolve=>setTimeout(resolve,700*attempt))}
+  finally{clearTimeout(timer)}
+ }
+ throw lastError||new Error('ไม่สามารถเชื่อมต่อ Apps Script ได้');
+}
 function ym(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')}
 function initSelectors(){
  const now=new Date();
